@@ -35,7 +35,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     # Locals/new
-    'app.main.apps.MainConfig',
+    'app.products.apps.ProductsConfig',
 
     # Default apps
     'django.contrib.admin',

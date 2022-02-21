@@ -7,6 +7,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+
+    # products
+    path('', include('app.products.urls', namespace='products')),
+
+    # admin
     path('admin/', admin.site.urls),
 ]
 
