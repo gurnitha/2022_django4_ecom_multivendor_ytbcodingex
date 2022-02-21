@@ -45,3 +45,10 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         new file:   templates/shared/offcanvas2.html
         new file:   templates/shared/preloader.html
         new file:   templates/shared/scripts.html
+
+
+#### 6. Creating page title
+
+        modified:   templates/base.html
+        modified:   templates/products/index.html
+        modified:   templates/shared/head.html
