@@ -30,3 +30,18 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   config/settings.py
         modified:   config/urls.py
         new file:   templates/products/index.html
+
+
+#### 5. Creating and extending base template
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/products/index.html
+        new file:   templates/shared/back_to_top.html
+        new file:   templates/shared/footer.html
+        new file:   templates/shared/head.html
+        new file:   templates/shared/header.html
+        new file:   templates/shared/offcanvas1.html
+        new file:   templates/shared/offcanvas2.html
+        new file:   templates/shared/preloader.html
+        new file:   templates/shared/scripts.html

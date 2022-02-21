@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    {% include 'shared/head.html' %}
+</head>
+<body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>
+      outdated</strong> 
+      browser. Please <a href="https://browsehappy.com/">
+      upgrade your browser</a> 
+      to improve your experience and security.</p>
+      <![endif]-->
+
+    <!--########## preloader start ##########-->
+    {% include 'shared/preloader.html' %}
+    <!--########## preloader start ##########-->
+
+    <!--######### back to top start #########-->
+    {% include 'shared/back_to_top.html' %}
+    <!--######### back to top start #########-->
+      
+    <!--################ header #############-->
+    {% include 'shared/header.html' %}
+    <!--################ header #############-->
+
+    <!--############ offcanvas1 #############-->
+    {% include 'shared/offcanvas1.html' %}
+    <!--############ offcanvas1 #############-->
+
+    <!--############ offcanvas2 #############-->
+    {% include 'shared/offcanvas2.html' %}
+    <!--############ offcanvas2 #############-->
+    
+    <!--################ main ###############-->
+    {% block content %} {% endblock content %}
+    <!--################ main ###############-->
+
+    <!--############### footer ##############-->
+    {% include 'shared/footer.html' %}
+    <!--############### footer ##############-->
+
+	<!--############### scripts #############-->
+    {% include 'shared/scripts.html' %}
+    <!--############### scripts #############-->
+    
+</body>
+</html>
