@@ -52,3 +52,28 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   templates/base.html
         modified:   templates/products/index.html
         modified:   templates/shared/head.html
+
+
+#### 7. SLIDER - Created Slider model and added some slider items to db and sagmenting the home page
+
+        modified:   README.md
+        new file:   templates/products/inc/10_recomand.html
+        new file:   templates/products/inc/11_brand.html
+        new file:   templates/products/inc/12_cta.html
+        new file:   templates/products/inc/13_shop.html
+        new file:   templates/products/inc/1_slider.html
+        new file:   templates/products/inc/2_features.html
+        new file:   templates/products/inc/3_banne.html
+        new file:   templates/products/inc/4_topsell.html
+        new file:   templates/products/inc/5_banner.html
+        new file:   templates/products/inc/6_topsell.html
+        new file:   templates/products/inc/7_featured.html
+        new file:   templates/products/inc/8_moveing.html
+        new file:   templates/products/inc/9_banner.html
+        modified:   templates/products/index.html
+
+
+
+
+
+
