@@ -73,6 +73,15 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   templates/products/index.html
 
 
+#### 8. Retrieve and fetch sliders to the home page
+
+        modified:   README.md
+        modified:   app/products/views.py
+        modified:   templates/products/inc/1_slider.html
+
+
+
+
 
 
 
