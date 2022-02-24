@@ -95,5 +95,15 @@ class BannerLower(models.Model):
 		return self.promo_title
 
 
+# Class model:Brand
+class Brand(models.Model):
 
+	image 	= models.ImageField(upload_to='media/brands')
+	name 	= models.CharField(max_length=100)
+
+	class Meta:
+		verbose_name_plural = 'Brands'
+
+	def __str__(self):
+		return self.name
 

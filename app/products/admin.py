@@ -6,7 +6,7 @@ from django.contrib import admin
 # Locals
 from app.products.models import (
 	Slider, Features, BannerTop, 
-	BannerMiddle, BannerLower)
+	BannerMiddle, BannerLower, Brand)
 
 
 # Register your models here.
@@ -15,3 +15,4 @@ admin.site.register(Features)
 admin.site.register(BannerTop)
 admin.site.register(BannerMiddle)
 admin.site.register(BannerLower)
+admin.site.register(Brand)

@@ -108,6 +108,12 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   templates/products/inc/2_features.html
 
 
+#### 12. BRAND Part 1 - Create Brand model 
+
+        modified:   README.md
+        modified:   app/products/admin.py
+        new file:   app/products/migrations/0005_brand.py
+        modified:   app/products/models.py
 
 
 
