@@ -3,61 +3,63 @@
         <section class="banner__area pt-60 pb-25">
             <div class="container">
                 <div class="row">
+
+                    <!-- Banner top -->
+                    {% for banner in banner_lower_top %}
                     <div class="col-xl-4 col-lg-6 col-md-12">
                         <div class="banner__item p-relative w-img mb-30">
                             <div class="banner__img">
-                                <a href="product-details.html"><img src="{% static 'assets/img/banner/banner-6.jpg' %}" alt=""></a>
+                                <a href="product-details.html"><img src="{{ banner.image.url }}" alt=""></a>
                             </div>
                             <div class="banner__content banner__content-sd text-center">
                                 <div class="banner-button mb-20">
-                                    <a href="product-details.html" class="st-btn">HOT DEALS</a>
+                                    <a href="product-details.html" class="st-btn">{{ banner.promo_title }}</a>
                                 </div>
-                                <h6><a href="product-details.html">Sale 30% Off <br> Top Computer Case Gaming</a></h6>
+                                <h6><a href="product-details.html">{{ banner.promo_subtitle}} <br> {{ banner.promo_offer }}</a></h6>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+                    <!-- End Banner top -->
+                    <!-- Banner middle -->
                     <div class="col-xl-4 col-lg-6 col-md-12">
                         <div class="row">
+                            {% for banner in banner_lower_middle %}
                             <div class="col-md-12">
                                 <div class="banner__item p-relative mb-30 w-img">
                                     <div class="banner__img">
-                                        <a href="product-details.html"><img src="{% static 'assets/img/banner/banner-7.jpg' %}" alt=""></a>
+                                        <a href="product-details.html"><img src="{{ banner.image.url }}" alt=""></a>
                                     </div>
                                     <div class="banner__content banner__content-sd text-center">
-                                        <h6><a href="product-details.html">Electronic Deals</a></h6>
-                                        <p>Laptop, Computer, Smartphone, Gampad</p>
+                                        <h6><a href="product-details.html">{{ banner.promo_title }}</a></h6>
+                                        <p>{{ banner.promo_subtitle}}</p>
                                         <div class="banner-button mt-20 d-none d-sm-block">
-                                            <a href="product-details.html" class="st-btn-3 b-radius">Shop Deals</a>
+                                            <a href="product-details.html" class="st-btn-3 b-radius">{{ banner.promo_offer }}</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="banner__item p-relative w-img mb-30">
-                                    <div class="banner__img">
-                                        <a href="product-details.html"><img src="{% static 'assets/img/banner/banner-8.jpg' %}" alt=""></a>
-                                    </div>
-                                    <div class="banner__content">
-                                        <h6><a href="product-details.html">Hot Products <br> Laptop Ultra 4K 16”</a></h6>
-                                        <p>Discount  20% On Products</p>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
+                    <!-- End Banner middle -->
+                    <!-- Banner lower -->
+                    {% for banner in banner_lower_lower %}
                     <div class="col-xl-4 col-lg-6 col-md-12">
                         <div class="banner__item p-relative mb-30 w-img">
                             <div class="banner__img">
-                                <a href="product-details.html"><img src="{% static 'assets/img/banner/banner-9.jpg' %}" alt=""></a>
+                                <a href="product-details.html"><img src="{{ banner.image.url }}" alt=""></a>
                             </div>
                             <div class="banner__content banner__content-sd text-center">
                                 <div class="banner-button mb-20">
-                                    <a href="product-details.html" class="st-btn">HOT DEALS</a>
+                                    <a href="product-details.html" class="st-btn">{{ banner.promo_title }}</a>
                                 </div>
-                                <h6><a href="product-details.html">Sport Edition <br> Best Choice of The Year</a></h6>
+                                <h6><a href="product-details.html">{{ banner.promo_subtitle}} <br> {{ banner.promo_offer }}</a></h6>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+                    <!-- Banner lower -->
                 </div>
             </div>
         </section>

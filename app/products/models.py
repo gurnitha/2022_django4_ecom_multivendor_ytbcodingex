@@ -30,3 +30,57 @@ class Slider(models.Model):
 	def __str__(self):
 		return self.brand_name
 
+
+# Class model:BannerTop
+class BannerTop(models.Model):
+
+	image 		= models.ImageField(upload_to='media/banners')
+	promo_title	= models.CharField(max_length=100, blank=True)
+	promo_subtitle	= models.CharField(max_length=100, blank=True)
+	promo_offer	= models.CharField(max_length=100, blank=True)
+
+	class Meta:
+		verbose_name_plural = 'Banners top'
+
+	def __str__(self):
+		return self.promo_title
+
+
+# Class model:BannerMiddle
+class BannerMiddle(models.Model):
+
+	image 		= models.ImageField(upload_to='media/banners')
+	promo_title	= models.CharField(max_length=100, blank=True)
+	promo_subtitle	= models.CharField(max_length=100, blank=True)
+	promo_offer	= models.CharField(max_length=100, blank=True)
+
+	class Meta:
+		verbose_name_plural = 'Banners middle'
+
+	def __str__(self):
+		return self.promo_title
+
+
+# Class model:BannerLower
+class BannerLower(models.Model):
+
+	BANNER_POSITION_CHOICES = (
+		('TOP', 'Top'),
+		('MIDDLE', 'Middle'),
+		('LOWER', 'Lower'),
+	)
+	image 		= models.ImageField(upload_to='media/banners')
+	promo_title	= models.CharField(max_length=100, blank=True)
+	promo_subtitle	= models.CharField(max_length=100, blank=True)
+	promo_offer	= models.CharField(max_length=100, blank=True)
+	position    = models.CharField(choices=BANNER_POSITION_CHOICES, max_length=10, blank=True, null=True)
+
+	class Meta:
+		verbose_name_plural = 'Banners lower'
+
+	def __str__(self):
+		return self.promo_title
+
+
+
+

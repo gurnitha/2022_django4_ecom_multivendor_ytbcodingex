@@ -80,6 +80,17 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   templates/products/inc/1_slider.html
 
 
+#### 9. Retrieve and fetch banner(top, middle, and lower) to the home page
+
+        modified:   README.md
+        modified:   app/products/admin.py
+        modified:   app/products/migrations/0001_initial.py
+        new file:   app/products/migrations/0002_bannerlower_position.py
+        ...
+        modified:   templates/products/inc/3_banne.html
+        modified:   templates/products/inc/5_banner.html
+        modified:   templates/products/inc/9_banner.html
+
 
 
 
