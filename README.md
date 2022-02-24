@@ -100,6 +100,14 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   app/products/models.py
 
 
+#### 11. FEATURES Part 2 - Retrieve and fetch features items to home page
+
+        modified:   README.md
+        modified:   app/products/admin.py
+        modified:   app/products/views.py
+        modified:   templates/products/inc/2_features.html
+
+
 
 
 
