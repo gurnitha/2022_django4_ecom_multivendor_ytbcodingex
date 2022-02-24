@@ -92,6 +92,12 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   templates/products/inc/9_banner.html
 
 
+#### 10. FEATURES Part 1 - Create Feature model 
+
+        modified:   README.md
+        new file:   app/products/migrations/0003_features.py
+        new file:   app/products/migrations/0004_remove_features_image_features_icon.py
+        modified:   app/products/models.py
 
 
 

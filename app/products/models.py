@@ -31,6 +31,19 @@ class Slider(models.Model):
 		return self.brand_name
 
 
+# Class model:Features
+class Features(models.Model):
+
+	icon 		= models.CharField(max_length=100, blank=True)
+	promo_title	= models.CharField(max_length=100, blank=True)
+	promo_offer	= models.CharField(max_length=100, blank=True)
+
+	class Meta:
+		verbose_name_plural = 'Features'
+
+	def __str__(self):
+		return self.promo_title
+
 # Class model:BannerTop
 class BannerTop(models.Model):
 
