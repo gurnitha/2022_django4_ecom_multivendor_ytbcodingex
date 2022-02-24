@@ -4,24 +4,13 @@
             <div class="container">
                 <div class="brand-slider swiper-container pt-50 pb-45">
                     <div class="swiper-wrapper">
+                        <!-- Brand -->
+                        {% for brand in brands %}
                         <div class="brand-item w-img swiper-slide">
-                            <a href="#"><img src="{% static 'assets/img/brand/brand-1.jpg' %}" alt="brand"></a>
+                            <a href="#"><img src="{{ brand.image.url }}" alt="brand"></a>
                         </div>
-                        <div class="brand-item w-img swiper-slide">
-                            <a href="#"><img src="{% static 'assets/img/brand/brand-2.jpg' %}" alt="brand"></a>
-                        </div>
-                        <div class="brand-item w-img swiper-slide">
-                            <a href="#"><img src="{% static 'assets/img/brand/brand-3.jpg' %}" alt="brand"></a>
-                        </div>
-                        <div class="brand-item w-img swiper-slide">
-                            <a href="#"><img src="{% static 'assets/img/brand/brand-4.jpg' %}" alt="brand"></a>
-                        </div>
-                        <div class="brand-item w-img swiper-slide">
-                            <a href="#"><img src="{% static 'assets/img/brand/brand-5.jpg' %}" alt="brand"></a>
-                        </div>
-                        <div class="brand-item w-img swiper-slide">
-                            <a href="#"><img src="{% static 'assets/img/brand/brand-6.jpg' %}" alt="brand"></a>
-                        </div>
+                        {% endfor %}
+                        <!-- End Brand -->
                     </div>
                 </div>
             </div>

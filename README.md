@@ -116,4 +116,15 @@ BUILDING MULTIVENDOR ECOMMERCE USING DJANGO 4
         modified:   app/products/models.py
 
 
+#### 13. BRAND Part 2 - Retrieve and fetch brand items to home page
+
+        modified:   README.md
+        modified:   app/products/views.py
+        new file:   media/media/brands/brand-1.jpg
+        new file:   media/media/brands/brand-2.jpg
+        new file:   media/media/brands/brand-3.jpg
+        new file:   media/media/brands/brand-4.jpg
+        new file:   media/media/brands/brand-5.jpg
+        new file:   media/media/brands/brand-6.jpg
+        modified:   templates/products/inc/11_brand.html
 

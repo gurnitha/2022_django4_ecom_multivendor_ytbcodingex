@@ -6,7 +6,7 @@ from django.shortcuts import render
 # Locals
 from app.products.models import (
 	Slider, Features, BannerTop, 
-	BannerMiddle, BannerLower)
+	BannerMiddle, BannerLower, Brand)
 
 # Create your views here.
 
@@ -21,6 +21,7 @@ def product_list(request):
 	banner_lower_top  = BannerLower.objects.order_by('id')[0:1]
 	banner_lower_middle  = BannerLower.objects.order_by('id')[1:3]
 	banner_lower_lower  = BannerLower.objects.order_by('id')[3:4]
+	brands = Brand.objects.all()
 	context = {
 		'slider_list':slider_list,
 		'features':features,
@@ -30,6 +31,7 @@ def product_list(request):
 		'banner_lower_top':banner_lower_top,
 		'banner_lower_middle':banner_lower_middle,
 		'banner_lower_lower':banner_lower_lower,
+		'brands':brands,
 	}
 	
 	return render(request, 'products/index.html', context)
